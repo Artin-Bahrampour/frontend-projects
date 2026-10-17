@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFlow — Task Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <p class="eyebrow">PERSONAL PRODUCTIVITY</p>
+        <div class="hero-row"><div><h1>FocusFlow</h1><p>Turn a crowded day into a calm plan.</p></div><div id="date" class="date"></div></div>
+      </section>
+      <section class="dashboard" aria-label="Task dashboard">
+        <div class="stats">
+          <article><span>Today’s tasks</span><strong id="total-count">0</strong></article>
+          <article><span>Completed</span><strong id="done-count">0</strong></article>
+          <article><span>Progress</span><strong id="progress-label">0%</strong></article>
+        </div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+        <form id="task-form" class="task-form">
+          <label class="sr-only" for="task-input">New task</label>
+          <input id="task-input" maxlength="80" placeholder="What needs your attention?" required />
+          <select id="priority" aria-label="Priority"><option value="high">High priority</option><option value="medium" selected>Medium priority</option><option value="low">Low priority</option></select>
+          <button type="submit">Add task</button>
+        </form>
+        <div class="list-head"><h2>My focus list</h2><button id="clear-done" type="button">Clear completed</button></div>
+        <ul id="task-list" class="task-list"></ul>
+        <p id="empty-state" class="empty-state">No tasks yet. Add one small next step.</p>
+      </section>
+    </main>
+    <template id="task-template"><li class="task"><button class="check" type="button" aria-label="Mark task complete"></button><span class="task-text"></span><span class="priority"></span><button class="delete" type="button" aria-label="Delete task">×</button></li></template>
+    <script src="app.js"></script>
+  </body>
+</html>

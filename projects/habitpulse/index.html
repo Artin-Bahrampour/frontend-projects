@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HabitPulse</title>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div><p class="eyebrow">WEEKLY INTENTIONS</p><h1>HabitPulse</h1><p class="subhead">A calmer way to make small routines stick.</p></div>
+        <div class="today" id="today"></div>
+      </header>
+      <section class="card overview" aria-label="Weekly overview">
+        <div><span>Weekly score</span><strong id="weekly-score">0%</strong></div>
+        <div class="progress"><span id="progress-bar"></span></div>
+        <p id="score-message">Start with one check-in today.</p>
+      </section>
+      <section class="card habit-card">
+        <div class="section-heading"><div><p class="eyebrow">YOUR ROUTINES</p><h2>Build the rhythm</h2></div><button class="ghost" id="reset" type="button">Reset week</button></div>
+        <form id="habit-form" class="habit-form">
+          <label class="sr-only" for="habit-input">New habit</label>
+          <input id="habit-input" maxlength="40" required placeholder="Add a habit, e.g. Walk for 20 minutes" />
+          <button type="submit">Add habit</button>
+        </form>
+        <div class="week-labels" aria-hidden="true"><span></span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span><span></span></div>
+        <ul id="habit-list" class="habit-list"></ul>
+        <p id="empty-state" class="empty">No habits yet. Choose one small promise to yourself.</p>
+      </section>
+    </main>
+    <template id="habit-template"><li class="habit-row"><span class="habit-name"></span><div class="check-grid"></div><button class="remove" type="button" aria-label="Remove habit">×</button></li></template>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

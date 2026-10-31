@@ -15,3 +15,8 @@ A responsive task dashboard built with HTML, CSS, and JavaScript.
 A weekly habit tracker built with TypeScript and Vite.
 
 [View the project](./projects/habitpulse/)
+### SprintSpace
+
+A compact Kanban-style project board built with React and Vite.
+
+[View the project](./projects/sprintspace/)

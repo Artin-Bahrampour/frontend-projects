@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>PocketPantry</title><link rel="stylesheet" href="styles.css" /></head>
+  <body>
+    <main class="shell">
+      <header><div><p class="eyebrow">SMART GROCERY LIST</p><h1>PocketPantry</h1><p>Plan less. Cook more.</p></div><button id="clear" class="clear" type="button">Clear checked</button></header>
+      <section class="summary"><div><span>Items to buy</span><strong id="remaining">0</strong></div><div><span>Estimated total</span><strong id="total">$0.00</strong></div><div><span>Progress</span><strong id="progress-label">0%</strong></div><div class="progress"><span id="progress"></span></div></section>
+      <section class="card"><form id="item-form"><input id="item-name" required maxlength="45" placeholder="Add an item, e.g. Avocados" /><select id="item-category"><option>Produce</option><option>Pantry</option><option>Dairy</option><option>Bakery</option><option>Other</option></select><input id="item-price" type="number" min="0" step="0.01" placeholder="$ Price" /><button>Add item</button></form>
+        <div class="filters" id="filters"><button class="active" data-filter="all">All</button><button data-filter="Produce">Produce</button><button data-filter="Pantry">Pantry</button><button data-filter="Dairy">Dairy</button><button data-filter="Bakery">Bakery</button><button data-filter="Other">Other</button></div>
+        <ul id="items" class="items"></ul><p id="empty" class="empty">Your grocery list is clear. Add something delicious.</p>
+      </section>
+    </main>
+    <template id="item-template"><li class="item"><button class="check" type="button" aria-label="Toggle item completion"></button><div class="item-copy"><strong></strong><span></span></div><span class="price"></span><button class="delete" type="button" aria-label="Delete item">×</button></li></template>
+    <script src="app.js"></script>
+  </body>
+</html>

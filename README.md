@@ -20,3 +20,9 @@ A weekly habit tracker built with TypeScript and Vite.
 A compact Kanban-style project board built with React and Vite.
 
 [View the project](./projects/sprintspace/)
+
+### PocketPantry
+
+A polished grocery-list app built with HTML, CSS, and JavaScript.
+
+[View the project](./projects/pocketpantry/)

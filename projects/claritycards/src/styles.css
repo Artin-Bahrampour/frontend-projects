@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root { font-family: "DM Sans", sans-serif; color: #f8f3e8; background: #1b2430; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 15% 20%, #36415c 0, transparent 32%), #1b2430; }
+button { font: inherit; cursor: pointer; }
+.shell { width: min(720px, calc(100% - 40px)); margin: 0 auto; padding: 34px 0 64px; }
+header { display: flex; justify-content: space-between; align-items: center; }
+.brand { color: #f8f3e8; text-decoration: none; font-family: "Playfair Display", serif; font-size: 1.5rem; }.brand span { color: #e8a84b; }
+.counter, .eyebrow, .label { font: 0.72rem "DM Mono", monospace; letter-spacing: .12em; }.counter { color: #b8c0ce; }.eyebrow, .label { color: #e8a84b; }
+.intro { margin: 90px 0 25px; }.intro h1, .complete h1 { margin: 10px 0 0; font: 600 clamp(2.5rem, 8vw, 4.8rem)/.98 "Playfair Display", serif; letter-spacing: -.04em; }
+.progress { height: 4px; background: #3d485b; border-radius: 10px; overflow: hidden; }.progress span { display: block; height: 100%; background: #e8a84b; transition: width .25s; }
+.card { min-height: 310px; display: flex; flex-direction: column; justify-content: center; padding: 42px; margin-top: 34px; border: 1px solid #526077; border-radius: 20px; background: #273246; box-shadow: 0 22px 50px #0d111a55; }.card.is-revealed { background: #31425a; border-color: #6c86a5; }.card h2 { max-width: 570px; margin: 15px 0 30px; font: 600 clamp(1.7rem, 5vw, 2.7rem)/1.14 "Playfair Display", serif; }.text-button { align-self: flex-start; padding: 0; color: #f6c67b; background: none; border: 0; border-bottom: 1px solid currentColor; }
+.hint { margin-top: 22px; color: #b8c0ce; font-size: .9rem; }.rating { margin-top: 25px; }.rating p { color: #b8c0ce; }.rating div { display: flex; gap: 10px; flex-wrap: wrap; }.rating button, .primary { padding: 12px 19px; color: #f8f3e8; background: transparent; border: 1px solid #64728a; border-radius: 999px; }.rating .success, .primary { color: #1b2430; background: #e8a84b; border-color: #e8a84b; }
+.complete { padding-top: 19vh; text-align: center; }.complete p { max-width: 390px; margin: 22px auto; color: #c5cbd5; line-height: 1.6; }.score { margin: 38px auto; display: grid; gap: 2px; }.score span { color: #e8a84b; font: 700 5rem/1 "Playfair Display", serif; }.score small { color: #b8c0ce; }.complete .primary { font-weight: 700; }
+@media (max-width: 540px) { .intro { margin-top: 64px; }.card { min-height: 280px; padding: 29px; } }

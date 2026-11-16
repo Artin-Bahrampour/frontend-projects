@@ -26,3 +26,9 @@ A compact Kanban-style project board built with React and Vite.
 A polished grocery-list app built with HTML, CSS, and JavaScript.
 
 [View the project](./projects/pocketpantry/)
+
+### ClarityCards
+
+A focused flashcard study app built with TypeScript and Vite.
+
+[View the project](./projects/claritycards/)
